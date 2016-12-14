@@ -5,7 +5,7 @@ jdk: oraclejdk8
 script: ./travis.sh
 
 env:
-  - TARGET=CI
+  #- TARGET=CI
   - TARGET=WEB
 
 matrix:
