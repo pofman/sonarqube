@@ -19,14 +19,13 @@
  */
 // @flow
 import getHistory from './getHistory';
-import { requireAuthentication } from '../../store/appState/duck';
 
 export default () => {
   const history = getHistory();
 
   const returnTo = window.location.pathname + window.location.search + window.location.hash;
 
-  window.store.dispatch(requireAuthentication());
+  window.store.dispatch({ type: 'REQUIRE_AUTHENTICATION' });
   history.replace({
     pathname: '/sessions/new',
     query: { 'return_to': returnTo }

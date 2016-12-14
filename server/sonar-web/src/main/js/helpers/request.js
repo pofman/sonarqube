@@ -20,6 +20,7 @@
 // @flow
 import { stringify } from 'querystring';
 import { getCookie } from './cookies';
+import handleRequiredAuthentication from '../app/utils/handleRequiredAuthentication';
 
 type Response = {
   json: () => Promise<Object>,
@@ -147,8 +148,6 @@ export function request (url: string): Request {
  */
 export function checkStatus (response: Response): Promise<Object> {
   if (response.status === 401) {
-    // workaround cyclic dependencies
-    const handleRequiredAuthentication = require('../app/utils/handleRequiredAuthentication').default;
     handleRequiredAuthentication();
     return Promise.reject();
   } else if (response.status >= 200 && response.status < 300) {

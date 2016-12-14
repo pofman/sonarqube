@@ -120,22 +120,7 @@
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules",
-      "<rootDir>/src/main/webapp",
-      "<rootDir>/src/main/js/apps/account/projects/__tests__/ProjectCard-test.js",
-      "<rootDir>/src/main/js/apps/account/projects/__tests__/Projects-test.js",
-      "<rootDir>/src/main/js/helpers/__tests__/measures-test.js",
-      "<rootDir>/src/main/js/apps/overview/qualityGate/__tests__/QualityGateCondition-test.js",
-      "<rootDir>/src/main/js/apps/overview/components/__tests__/App-test.js",
-      "<rootDir>/src/main/js/apps/settings/licenses/__tests__/LicenseRow-test.js",
-      "<rootDir>/src/main/js/components/charts/__tests__/treemap-test.js",
-      "<rootDir>/src/main/js/apps/background-tasks/__tests__/background-tasks-test.js",
-      "<rootDir>/src/main/js/apps/system/__tests__/system-test.js",
-      "<rootDir>/src/main/js/apps/quality-profiles/components/__tests__/ProfileContainer-test.js",
-      "<rootDir>/src/main/js/components/controls/__tests__/ListFooter-test.js",
-      "<rootDir>/src/main/js/apps/settings/licenses/__tests__/LicensesApp-test.js",
-      "<rootDir>/src/main/js/components/ui/__tests__/Avatar-test.js",
-      "<rootDir>/src/main/js/apps/settings/licenses/__tests__/LicensesList-test.js",
-      "<rootDir>/src/main/js/components/ui/__tests__/Rating-test.js"
+      "<rootDir>/src/main/webapp"
     ]
   },
   "babel": {

@@ -24,6 +24,7 @@ import Marionette from 'backbone.marionette';
 import escapeHtml from 'escape-html';
 import { translate } from '../../helpers/l10n';
 import { getCSRFTokenName, getCSRFTokenValue } from '../../helpers/request';
+import handleRequiredAuthentication from './handleRequiredAuthentication';
 
 const defaults = {
   queue: {},
@@ -167,7 +168,6 @@ function handleAjaxError (jqXHR) {
 
 function handleNotAuthenticatedError () {
   // workaround cyclic dependencies
-  const handleRequiredAuthentication = require('./handleRequiredAuthentication').default;
   handleRequiredAuthentication();
 }
 
