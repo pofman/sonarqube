@@ -120,7 +120,12 @@
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules",
-      "<rootDir>/src/main/webapp"
+      "<rootDir>/src/main/webapp",
+      "<rootDir>/src/main/js/apps/account/projects/__tests__/ProjectCard-test.js",
+      "<rootDir>/src/main/js/apps/account/projects/__tests__/Projects-test.js",
+      "<rootDir>/src/main/js/helpers/__tests__/measures-test.js",
+      "<rootDir>/src/main/js/apps/overview/qualityGate/__tests__/QualityGateCondition-test.js",
+      "<rootDir>/src/main/js/apps/overview/components/__tests__/App-test."
     ]
   },
   "babel": {
